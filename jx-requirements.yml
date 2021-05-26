@@ -14,8 +14,11 @@ spec:
     gitName: github
     gitServer: https://github.com
     provider: minikube
+    registry: 10.105.206.241
   environments:
   - key: dev
+    owner: jstrachan
+    repository: jx-demo-minikube2
   - key: staging
   - key: production
   ingress:
@@ -27,6 +30,8 @@ spec:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: jstrachan
   repository: bucketrepo
   secretStorage: local
   vault: {}
